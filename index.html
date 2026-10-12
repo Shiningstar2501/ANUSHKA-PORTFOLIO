@@ -3,458 +3,512 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Anushka Arora — Cloud & DevOps | AI Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Anushka</div>
-    <div>
-      <ul class="nav-links">
+  <!-- Background grid -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav-wrap">
+    <nav>
+      <a href="#" class="nav-logo">
+        <span class="nav-logo__bracket">&lt;</span>Anushka<span class="nav-logo__bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Anushka</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/anushka_image.jpeg" alt="#" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Anushka Arora</h1>
-      <p class="section__text__p2">Web Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/A')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/anushka-arora-224614225'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/Shiningstar2501'" />
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/anushka_image.jpeg" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p> Frontend Development &#8226; Graphic Designing &#8226; Content Writing </p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>Diploma in CSE &#8226; B.Tech in Computer Science and Design</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            <!-- Proficient in front-end and back-end development, aiming to create innovative and user-friendly web solutions. Skilled in HTML, CSS, JavaScript, and eager to learn new technologies. Committed to delivering high-quality, responsive, and visually appealing websites that exceed expectations -->
-
-            👩‍💻 I'm Anushka Arora, a Frontend Developer, Graphic Designer, Content Writer, and Digital Marketer.
-            </br>
-            <b>Interests</b></br>
-            👀 I'm passionate about creating beautiful and functional websites.<br>
-            🎨 Graphic design is my creative outlet, and I love crafting visual experiences.<br>
-            ✍️ I enjoy writing engaging and informative content.<br>
-            📈 I thrive in the digital marketing landscape, optimizing online presence.<br>
-            <b> Current Focus</b><br>
-            🌱 I'm currently learning new frontend technologies to stay up-to-date.<br>
-            🚀 I'm always eager to explore the latest design trends and tools.<br>
-            📝 I'm constantly improving my content creation and marketing skills.<br>
-            <b> Collaboration</b><br>
-            💞 I'm open to collaborating on exciting projects in web development, design, content creation, and digital
-            marketing.
-            <br>
-            <!-- Contact
-              📫 You can reach me through:
-              
-              Email: officialanushka250103@gmail.com
-              LinkedIn: Anushka Arora
-              Portfolio Website:
-              Looking forward to connecting with you and working on amazing projects together! -->
-
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <section id="experience">
-    <!-- <p class="section__text__p1">Explore My</p> -->
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>React</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Tailwind CSS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Express JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-  
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/recharge-portal.png" alt="Recharge Portal Website" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">RECHARGE PORTAL WEBSITE</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shiningstar2501/RECHARGE-PORTAL'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://recharge-portal-website.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-  
-        <!-- Project 2 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/e-clininc.png" alt="E-Clinic Website" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">E-CLINIC WEBSITE</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shiningstar2501/E-CLINIC-WEBSITE'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://e-clinic-gcet.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-  
-        <!-- Project 3 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/Ccalculator.png" alt="Calculator" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">SCIENTIFIC CALCULATOR</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shiningstar2501/scientific_calculator_macOS'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://scientific-calculator-mac-os.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-  
-        <!-- Project 4 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/diabetes.png" alt="Diabetes Predection" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">DIABETES PREDECTION (ML) </h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shiningstar2501/diabees-predection'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://https://diabees-predection.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-         <!-- Project 5 -->
-        <!-- <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/count-down.png" alt="Countdown Timer" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">COUNTDOWN TIMER</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shiningstar2501/count-down-app'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://count-down-app-beige.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div> -->
-  
-        <!-- Project 6 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/love-cal.png" alt="Love Calculator" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">LOVE CALCULATOR</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shiningstar2501/love-calculator'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://love-calculator-olive.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-
-        <!-- Project 7 -->
-        <!-- <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/couter-app.png" alt="Counter App" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">COUNTER APP</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shiningstar2501/counter-app'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://counter-app-rosy-one.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-   -->
-        <!-- Project 8 -->
-        <!-- <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/shradha-website.png" alt="Shradha Cutlery Website" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">SHRADHA-CUTLERY WEBSITE</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shiningstar2501/E-CLINIC-WEBSITE'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://shradha-website.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-      </div> -->
-  
-    </div>
-  </section>
-    
-  <section id="achievements">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Achievements</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/gold medalist.jpg" alt="Project 1" class="project-img" height="400px" />
-          </div>
-          <h2 class="experience-sub-title project-title">GOLD MEDALIST IN DIPLOMA</h2>
-          <div class="btn-container">
-            <!-- <button
-                class="btn btn-color-2 project-btn"
-              onclick="location.href= 'https://github.com/Shiningstar2501/RECHARGE-PORTAL'"
-              >
-               Github 
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href= 'https://recharge-portal-website.vercel.app/'"
-              >
-                Live Demo
-              </button> -->
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/oofy-gd.jpg" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">GRAPHIC DESIGNING INTERNSHIP</h2>
-          <div class="btn-container">
-            <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href= 'https://github.com/Shiningstar2501/E-CLINIC-WEBSITE'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://e-clinic-gcet.vercel.app/'"
-              >
-                Live Demo
-              </button> -->
-          </div>
-        </div>
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/bharat-webd.jpg" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">WEB DEVELOPMENT INTERNSHIP</h2>
-          <div class="btn-container">
-
-            <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#'"
-              >
-                Live Demo
-              </button> -->
-          </div>
-        </div>
-        <!-- <div class="details-container color-container"> -->
-        <!-- <div class="article-container"> -->
-        <!-- <img -->
-        <!-- src="./assets/GcetNotes.png" -->
-        <!-- alt="Project 3" -->
-        <!-- class="project-img" -->
-        <!-- /> -->
-        <!-- </div> -->
-        <!-- <h2 class="experience-sub-title project-title">JAVA PROJECTS</h2> -->
-        <!-- <div class="btn-/container"> -->
-
-        <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#'"
-              >
-                Live Demo
-              </button> -->
-      </div>
-    </div>
-    </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:examplemail@gmail.com">officialanushka250103@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/anushka-arora-224614225">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
-    <p>Copyright &#169; 2024 Anushka. All Rights Reserved.</p>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content reveal">
+      <span class="hero-badge">Open to Opportunities</span>
+      <h1>Hi, I'm <span class="gradient-text">Anushka Arora</span></h1>
+      <p class="hero-typed" id="heroTyped"></p>
+      <p class="hero-desc">
+        Building secure, scalable cloud infrastructure and intelligent automation.
+        Shipping production systems on AWS, Kubernetes, and Jenkins — with AI agents
+        that diagnose, patch, and protect.
+      </p>
+      <div class="hero-actions">
+        <a href="./assets/ANUSHKA-RESUME-FINAL.pdf" class="btn btn--primary" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+        <a href="#contact" class="btn btn--outline">Get in Touch</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://www.linkedin.com/in/anushka-arora-224614225" target="_blank" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/Shiningstar2501" target="_blank" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:officialanushka250103@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal reveal--delay">
+      <div class="hero-img-wrap">
+        <img src="./assets/anushka_image.jpeg" alt="Anushka Arora" />
+        <div class="hero-img-ring"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats reveal">
+    <div class="stat">
+      <span class="stat__num">1.5+</span>
+      <span class="stat__label">Years Experience</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num">8+</span>
+      <span class="stat__label">Projects Shipped</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num">5</span>
+      <span class="stat__label">AI Models on HF</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num">98.7%</span>
+      <span class="stat__label">Gold Medalist</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-tag">Introduction</span>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>
+          I'm a Cloud &amp; DevOps Engineer and AI Engineer currently at
+          <strong>BusinessNext</strong>, where I build and manage production AWS
+          infrastructure, Kubernetes clusters, and CI/CD pipelines for enterprise
+          clients.
+        </p>
+        <p>
+          My work sits at the intersection of <em>infrastructure</em> and
+          <em>intelligence</em> — I build automated patching systems, security
+          compliance agents, root-cause analysis bots, and cost optimization tools
+          that keep cloud environments secure, observable, and efficient.
+        </p>
+        <p>
+          Before this, I trained and deployed 5 production ML models at Visacent
+          (published on Hugging Face), and automated R&amp;D workflows at Cadence
+          Design Systems.
+        </p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-card__icon">&#9729;</div>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>AWS, Kubernetes, Jenkins, Terraform, CI/CD</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__icon">&#9881;</div>
+          <h3>Automation</h3>
+          <p>Patching, compliance, cost optimization</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__icon">&#10047;</div>
+          <h3>AI Engineering</h3>
+          <p>LLM agents, CV, NLP, Hugging Face</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__icon">&#9730;</div>
+          <h3>Security</h3>
+          <p>CSPM, CIS, FSBP, PCI-DSS, NIST</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-tag">Capabilities</span>
+      <h2>Skills &amp; Tools</h2>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-category">
+        <h3 class="skill-category__title">
+          <span class="skill-dot skill-dot--cloud"></span>Cloud &amp; Infrastructure
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS IAM</span>
+          <span class="skill-tag">S3</span>
+          <span class="skill-tag">EC2</span>
+          <span class="skill-tag">SSM</span>
+          <span class="skill-tag">EKS</span>
+          <span class="skill-tag">VPC</span>
+          <span class="skill-tag">Site-to-Site VPN</span>
+          <span class="skill-tag">ALB</span>
+          <span class="skill-tag">ACM</span>
+          <span class="skill-tag">ElastiCache</span>
+          <span class="skill-tag">CloudWatch</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category__title">
+          <span class="skill-dot skill-dot--k8s"></span>Kubernetes
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">StatefulSets</span>
+          <span class="skill-tag">Deployments</span>
+          <span class="skill-tag">Pods</span>
+          <span class="skill-tag">Ingress</span>
+          <span class="skill-tag">Secrets</span>
+          <span class="skill-tag">ConfigMaps</span>
+          <span class="skill-tag">Helm</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category__title">
+          <span class="skill-dot skill-dot--devops"></span>DevOps &amp; Automation
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Automated Patching</span>
+          <span class="skill-tag">Cost Optimization</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category__title">
+          <span class="skill-dot skill-dot--obs"></span>Observability &amp; RCA
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Prometheus</span>
+          <span class="skill-tag">Grafana</span>
+          <span class="skill-tag">Kibana</span>
+          <span class="skill-tag">CloudWatch Logs</span>
+          <span class="skill-tag">Root Cause Analysis</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category__title">
+          <span class="skill-dot skill-dot--sec"></span>Security &amp; Compliance
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">CSPM</span>
+          <span class="skill-tag">CIS Benchmarks</span>
+          <span class="skill-tag">AWS FSBP</span>
+          <span class="skill-tag">PCI-DSS</span>
+          <span class="skill-tag">NIST</span>
+          <span class="skill-tag">Remediation</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category__title">
+          <span class="skill-dot skill-dot--ai"></span>AI / ML Engineering
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">LLM Agents</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">NLP</span>
+          <span class="skill-tag">Hugging Face</span>
+          <span class="skill-tag">Model Training</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category__title">
+          <span class="skill-dot skill-dot--bi"></span>BI Platforms
+        </h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Redash</span>
+          <span class="skill-tag">Superset</span>
+          <span class="skill-tag">Metabase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <span class="section-tag">Journey</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Cloud &amp; DevOps Engineer &middot; AI Engineer</h3>
+            <span class="timeline-company">BusinessNext</span>
+          </div>
+          <span class="timeline-date">2025 &mdash; Present</span>
+          <ul class="timeline-list">
+            <li>Built automated patching pipeline on Jenkins for EKS, EC2, and ElastiCache</li>
+            <li>Enforcing cloud security compliance (CIS, FSBP, PCI-DSS, NIST)</li>
+            <li>Developing Guardex — a cloud security compliance agent for auto-remediation</li>
+            <li>Building RCA bot with Prometheus, Grafana, Kibana, CloudWatch integration</li>
+            <li>Cost optimization tool to reduce unnecessary AWS spend</li>
+            <li>End-to-end infra: IAM, S3, EC2, EKS, VPC, VPN, ALB, Kubernetes workloads</li>
+            <li>K8s diagnostic agent for live cluster troubleshooting</li>
+            <li>Upgraded Redash via Helm; implemented Superset &amp; Metabase org-wide</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>AI Engineer</h3>
+            <span class="timeline-company">Visacent</span>
+          </div>
+          <span class="timeline-date">Jan 2025 &mdash; Jun 2025</span>
+          <ul class="timeline-list">
+            <li>Face recognition model (OpenCV, dlib) — published on Hugging Face</li>
+            <li>Image blur model for automatic region detection</li>
+            <li>Embassy data scraper (BeautifulSoup, Scrapy, Selenium)</li>
+            <li>Broken-image checker for website QA</li>
+            <li>Reviews analyzer with sentiment analysis (NLTK, spaCy, Transformers)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>R&amp;D Developer &mdash; Intern</h3>
+            <span class="timeline-company">Cadence Design Systems</span>
+          </div>
+          <span class="timeline-date">Jul 2024 &mdash; Dec 2024</span>
+          <ul class="timeline-list">
+            <li>Automated test-case sync with code changes — 90% reduction in manual effort</li>
+            <li>Refactored Cadence Virtuoso UI for improved usability</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Python Developer</h3>
+            <span class="timeline-company">Sai Products &amp; Grafiqs</span>
+          </div>
+          <span class="timeline-date">Nov 2021 &mdash; Oct 2022</span>
+          <ul class="timeline-list">
+            <li>Website translation tool for multilingual content — deployed on Hugging Face</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-tag">Work</span>
+      <h2>Featured Projects</h2>
+    </div>
+    <div class="projects-grid">
+      <!-- Guardex -->
+      <div class="project-card reveal">
+        <div class="project-card__visual project-card__visual--guardex">
+          <span class="project-card__emoji">&#128737;</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span>AWS</span><span>Python</span><span>CSPM</span><span>FastAPI</span>
+          </div>
+          <h3>Guardex</h3>
+          <p>Enterprise Cloud Security Posture Management platform. Auto-scans AWS for misconfigurations against CIS, FSBP, PCI-DSS, NIST and remediates findings automatically.</p>
+          <div class="project-card__links">
+            <a href="https://github.com/Shiningstar2501" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- RCA Bot -->
+      <div class="project-card reveal">
+        <div class="project-card__visual project-card__visual--rca">
+          <span class="project-card__emoji">&#128269;</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span>Prometheus</span><span>Grafana</span><span>LLM</span>
+          </div>
+          <h3>RCA Bot</h3>
+          <p>Root-cause analysis bot that integrates with Prometheus, Grafana, Kibana, and CloudWatch to pinpoint incident causes and recommend resolutions.</p>
+        </div>
+      </div>
+      <!-- K8s Diagnostic Agent -->
+      <div class="project-card reveal">
+        <div class="project-card__visual project-card__visual--k8s">
+          <span class="project-card__emoji">&#9784;</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span>Kubernetes</span><span>Python</span><span>Agent</span>
+          </div>
+          <h3>K8s Diagnostic Agent</h3>
+          <p>Reads live cluster activity, explains what went wrong, and recommends the exact next action in plain language.</p>
+        </div>
+      </div>
+      <!-- Automated Patching -->
+      <div class="project-card reveal">
+        <div class="project-card__visual project-card__visual--patch">
+          <span class="project-card__emoji">&#128295;</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span>Jenkins</span><span>EKS</span><span>EC2</span><span>ElastiCache</span>
+          </div>
+          <h3>Automated Patching Pipeline</h3>
+          <p>End-to-end patching pipeline on Jenkins spanning EKS clusters, EC2 instances, and ElastiCache for smooth, low-risk rollouts.</p>
+        </div>
+      </div>
+      <!-- Cost Optimizer -->
+      <div class="project-card reveal">
+        <div class="project-card__visual project-card__visual--cost">
+          <span class="project-card__emoji">&#128176;</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span>AWS</span><span>Cost Explorer</span><span>Python</span>
+          </div>
+          <h3>Cost Optimization Tool</h3>
+          <p>Identifies underutilized resources and reduces unnecessary AWS spend across the infrastructure.</p>
+        </div>
+      </div>
+      <!-- Face Recognition -->
+      <div class="project-card reveal">
+        <div class="project-card__visual project-card__visual--face">
+          <span class="project-card__emoji">&#129504;</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span>OpenCV</span><span>dlib</span><span>Hugging Face</span>
+          </div>
+          <h3>Face Recognition Model</h3>
+          <p>Computer vision model for face recognition using OpenCV and dlib, published live on Hugging Face.</p>
+          <div class="project-card__links">
+            <a href="https://github.com/Shiningstar2501" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <div class="section-header reveal">
+      <span class="section-tag">Recognition</span>
+      <h2>Achievements</h2>
+    </div>
+    <div class="achievements-grid reveal">
+      <div class="achievement-card">
+        <div class="achievement-card__icon">&#127942;</div>
+        <h3>Gold Medalist</h3>
+        <p>Diploma in Computer Science Engineering &mdash; 98.7%</p>
+        <span class="achievement-card__place">Galgotias University</span>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-card__icon">&#127891;</div>
+        <h3>First Distinction</h3>
+        <p>B.Tech in Computer Science &amp; Design &mdash; CGPA 8.64</p>
+        <span class="achievement-card__place">GCET (AKTU)</span>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-card__icon">&#129302;</div>
+        <h3>5 AI/ML Models</h3>
+        <p>Designed, trained, and deployed 5 production models live on Hugging Face</p>
+        <span class="achievement-card__place">Visacent &amp; Sai Products</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="section-header reveal">
+      <span class="section-tag">Academics</span>
+      <h2>Education</h2>
+    </div>
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <div class="edu-card__degree">B.Tech, Computer Science &amp; Design</div>
+        <div class="edu-card__school">Galgotias College of Engineering &amp; Technology (AKTU)</div>
+        <div class="edu-card__meta">CGPA 8.64 &middot; First Distinction &middot; 2022 &ndash; 2025</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-card__degree">Diploma, Computer Science Engineering</div>
+        <div class="edu-card__school">Galgotias University</div>
+        <div class="edu-card__meta">98.7% &middot; Gold Medalist &middot; 2019 &ndash; 2022</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-tag">Connect</span>
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="contact-wrap reveal">
+      <p class="contact-desc">
+        I'm open to new opportunities, collaborations, and interesting conversations.
+        Feel free to reach out!
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:officialanushka250103@gmail.com" class="contact-card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+          <span>officialanushka250103@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/anushka-arora-224614225" target="_blank" class="contact-card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Shiningstar2501" target="_blank" class="contact-card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="tel:+918077150076" class="contact-card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>+91 8077150076</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#" class="nav-logo">
+        <span class="nav-logo__bracket">&lt;</span>Anushka<span class="nav-logo__bracket"> /&gt;</span>
+      </a>
+      <p>Designed &amp; built by Anushka Arora &copy; 2025</p>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 
